@@ -15,25 +15,26 @@
 AvitoTech_TestTask
 │
 ├──Task_1 - папка задания 1
-│       ├──BUGS_FROM_SCREENSHOT.md - файл с описанием найденных багов 
-│       └──Img                     - папка со скриншотами багов
+│       ├──BUGS_FROM_SCREENSHOT.md - Файл с описанием найденных багов 
+│       └──Img                     - Папка со скриншотами багов
 │
 ├──Task_2_1  - папка задания 2
-│       ├── tests/           - Директория с автотестами      
+│       ├── tests/          - Директория с автотестами      
 │           ├── conftest.py                 - Общие фикстуры и конфигурация pytest
 │           ├── test_create_item.py         - Тест-сьют 1: POST /api/1/item (создание объявления)
 │           ├── test_get_item.py            - Тест-сьют 2: GET /api/1/item/:id (получение по id)
 │           ├── test_get_seller_items.py    - Тест-сьют 3: GET /api/1/:sellerID/item (объявления продавца)
 │           └── test_get_statistic.py       - Тест-сьют 4: GET /api/1/statistic/:id (статистика)
 │
-│       ├──allure_images    - скриншот отчетов из веб-сервера Allure             
-│       ├──bugreport_images - папка со скриншотами багов
+│       ├──allure_images    - Скриншоты отчетов из веб-сервера Allure             
+│       ├──bugreport_images - Папка со скриншотами багов
 │       ├──BUGS.md          - Баг-репорты, обнаруженные в ходе тестирования
 │       ├──pyproject.toml   - Конфигурация black
 │       ├──pytest.ini       - Конфигурация pytest
 │       ├──setup.cfg        - Конфигурация flake8 и isort
 │       └──TESTCASES.md     - Полное описание тест-кейсов  
 │        
+├── .gitignore         - Список игнорируемых файлов и каталогов
 ├── README.md          - Описание проекта и инструкция по развертыванию
 └── requirements.txt   - Зависимости Python
     
