@@ -8,7 +8,7 @@ import uuid
 import pytest
 import requests
 import allure
-from test_task_2_1.tests.conftest import BASE_URL, HEADERS_JSON, get_unique_seller_id
+from conftest import BASE_URL, HEADERS_JSON, get_unique_seller_id
 
 
 # ─────────────────────────────────────────────
@@ -114,11 +114,11 @@ def test_create_item_valid_all_fields():
 @allure.story("Позитивные сценарии")
 @allure.title("TC-1.2: Создание объявления без поля statistics — ожидаем 400 (баг API)")
 @allure.severity(allure.severity_level.NORMAL)
-@pytest.mark.xfail(
-    reason="BUG: statistics является обязательным полем, хотя по документации — необязательное. "
-           "API возвращает 400: 'поле likes обязательно'.",
-    strict=True,
-)
+#@pytest.mark.xfail(
+ #   reason="BUG: statistics является обязательным полем, хотя по документации — необязательное. "
+  #         "API возвращает 400: 'поле likes обязательно'.",
+  #  strict=True,
+#)
 def test_create_item_without_statistics():
     """
     TC-1.2: statistics помечена как необязательная в документации,
@@ -148,11 +148,11 @@ def test_create_item_without_statistics():
 @allure.story("Позитивные сценарии")
 @allure.title("TC-1.3: Создание объявления с price = 0")
 @allure.severity(allure.severity_level.NORMAL)
-@pytest.mark.xfail(
-    reason="BUG: API отклоняет price=0 с ошибкой 'поле price обязательно'. "
-           "Нулевая цена семантически допустима — это falsy-проверка на стороне сервера.",
-    strict=True,
-)
+#@pytest.mark.xfail(
+#    reason="BUG: API отклоняет price=0 с ошибкой 'поле price обязательно'. "
+#           "Нулевая цена семантически допустима — это falsy-проверка на стороне сервера.",
+#    strict=True,
+#)
 def test_create_item_price_zero():
     payload = {
         "sellerID": get_unique_seller_id(),

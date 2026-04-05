@@ -7,7 +7,7 @@ import time
 import pytest
 import requests
 import allure
-from test_task_2_1.tests.conftest import BASE_URL, HEADERS_JSON, get_unique_seller_id
+from conftest import BASE_URL, HEADERS_JSON, get_unique_seller_id
 
 
 # ─────────────────────────────────────────────
