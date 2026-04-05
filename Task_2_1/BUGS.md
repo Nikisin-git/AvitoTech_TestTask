@@ -29,9 +29,10 @@ API не допускает случаев, если объявление соз
 - Поле `statistics` либо отсутствует, либо содержит дефолтные нулевые значения.
 
 Скриншот:
-![](Task_2_1/bugreport_images/Screen 1.1.png)
+![](https://github.com/Nikisin-git/AvitoTech_TestTask/blob/main/Task_2_1/bugreport_images/Screen%201.1.png)
 
-![](Task_2_1/bugreport_images/Screen 1.2.png)
+
+![](https://github.com/Nikisin-git/AvitoTech_TestTask/blob/main/Task_2_1/bugreport_images/Screen%201.1.png)
 
 ---
 
