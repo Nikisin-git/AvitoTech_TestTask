@@ -13,28 +13,27 @@
 
 
 AvitoTech_TestTask
-    │
-    Task_1
-    ├──BUGS_FROM_SCREENSHOT.md 
-    └──Img
-
-    Task_2_1
-    ├── tests/                          - Директория с автотестами│       ├── __init__.py                 # Инициализация пакета
+│
+├──Task_1
+│      ├──BUGS_FROM_SCREENSHOT.md 
+│      └──Img
+│
+├──Task_2_1
+│    ├── tests/                      - Директория с автотестами      
 │       ├── conftest.py                 - Общие фикстуры и конфигурация pytest
 │       ├── test_create_item.py         - Тест-сьют 1: POST /api/1/item (создание объявления)
 │       ├── test_get_item.py            - Тест-сьют 2: GET /api/1/item/:id (получение по id)
 │       ├── test_get_seller_items.py    - Тест-сьют 3: GET /api/1/:sellerID/item (объявления продавца)
 │       └── test_get_statistic.py       - Тест-сьют 4: GET /api/1/statistic/:id (статистика)
-│   ├── pytest.ini                      - Конфигурация pytest
-    ├── BUGS.md                         - Баг-репорты, обнаруженные в ходе тестирования
-
-    ├── setup.cfg                       - Конфигурация flake8 и isort
-    └── TESTCASES.md                    - Полное описание тест-кейсов
-  
-    ├──  pyproject.toml                  # Конфигурация black
-    ├── README.md                       - Данный файл — инструкция по развёртыванию и запуску
-│
-├── requirements.txt                # Зависимости Python
+│   
+│    ├──BUGS.md                         - Баг-репорты, обнаруженные в ходе тестирования
+│    ├──pyproject.toml                 - Конфигурация black
+│    ├──pytest.ini                       - Конфигурация pytest
+│    ├──setup.cfg                       - Конфигурация flake8 и isort
+│    └──TESTCASES.md                    - Полное описание тест-кейсов  
+│        
+├── README.md                       - опимание проекта и инструкция
+└── requirements.txt                - Зависимости Python
     
     
 ```
