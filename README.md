@@ -1,4 +1,4 @@
-# Тестовое задание Avito QA Internship 2026 — Задание 2.1: Тесты API
+# Тестовое задание на стажировку QA
 
 Автоматизированные тесты для API сервиса объявлений.  
 **Хост:** `https://qa-internship.avito.com`  
@@ -204,7 +204,7 @@ pytest Task_2_1/tests/test_get_statistic.py -v
 
 ```bash
 # Запуск конкретного теста
-pytest tests/test_create_item.py::test_create_item_valid_all_fields -v
+pytest Task_2_1/tests/test_create_item.py::test_create_item_valid_all_fields -v
 ```
 
 ---
