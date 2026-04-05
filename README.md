@@ -57,7 +57,7 @@ AvitoTech_TestTask
 
 ```bash
 git clone <URL репозитория>
-cd avito-qa-internship-2026
+cd AvitoTech_TestTask
 ```
 
 Или скачайте ZIP-архив и распакуйте его.
