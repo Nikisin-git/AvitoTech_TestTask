@@ -57,7 +57,7 @@ AvitoTech_TestTask
 
 ```bash
 git clone <URL репозитория>
-cd avito-qa-internship-2026
+cd AvitoTech_TestTask
 ```
 
 Или скачайте ZIP-архив и распакуйте его.
@@ -204,7 +204,7 @@ pytest Task_2_1/tests/test_get_statistic.py -v
 
 ```bash
 # Запуск конкретного теста
-pytest tests/test_create_item.py::test_create_item_valid_all_fields -v
+pytest Task_2_1/tests/test_create_item.py::test_create_item_valid_all_fields -v
 ```
 
 ---
